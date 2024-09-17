@@ -83,9 +83,11 @@
             font-size: 62.5%;
         }
 
-        dody {
+        body {
             font-size: 1.6rem;
             font-family: var(--font-primary);
+            background: var(--color-gray-1);
+            color: var(--color-dark-text);
         }
 
         h1,
@@ -130,6 +132,234 @@
 
             margin-right: 2rem;
 
+        }
+
+        /* Pading criado pelo professor do curso de jango  */
+        /* .search-form {
+            border: .2rem solid var(--color-primary-dark);
+            max-width: 64rem;
+            margin: 0 auto;
+            border-radius: .4rem;
+            position: relative;
+
+
+
+        }
+
+        .search-input,
+        .search-button {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 1rem;
+
+
+        }
+
+        .search-input {
+            width: 100%;
+            padding-right: 3rem;
+        }
+
+        .search-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .search-form {
+            border-color: var(--color-primary);
+        } */
+
+
+        /* Pading Criado pelo chat */
+
+        /* Estilo geral do formulário */
+        .search-form {
+            border: .2rem solid rgb(0, 123, 255);
+            /* Borda azul clara */
+            max-width: 64rem;
+            margin: 0 auto;
+            border-radius: .8rem;
+            /* Maior suavidade nos cantos */
+            position: relative;
+            background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(0, 255, 123, 0.8));
+            /* Gradiente de cores */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            /* Sombra sutil para destacar o formulário */
+            transition: all 0.3s ease-in-out;
+            /* Transição suave em todas as propriedades */
+        }
+
+        /* Estilo para a entrada de texto */
+        .search-input {
+            width: 100%;
+            padding-right: 3rem;
+            padding: 1.4rem;
+            /* Aumentando o preenchimento para maior espaço interno */
+            font-size: 1.2rem;
+            border-radius: .8rem .8rem;
+            /* Bordas arredondadas apenas no lado esquerdo */
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            /* Borda translúcida */
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Fundo branco semi-transparente */
+            color: rgb(33, 37, 41);
+            /* Cor do texto escura */
+            transition: border-color 0.3s ease;
+            /* Transição suave da borda ao focar */
+        }
+
+        /* Efeito de foco na entrada de texto */
+        .search-input:focus {
+            border-color: rgb(0, 123, 255);
+            /* Borda azul clara ao focar */
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+            /* Brilho ao redor do input ao focar */
+        }
+
+        /* Estilo do botão de busca */
+        .search-button {
+            position: absolute;
+            top: 0.3rem;
+            right: 0.30rem;
+            padding: 1rem 2rem;
+            background: rgb(0, 123, 255);
+            /* Fundo azul */
+            color: white;
+            /* Cor do texto */
+            border-radius: .5rem .5rem .5rem;
+            /* Bordas arredondadas no lado direito */
+            cursor: pointer;
+            transition: background 0.3s ease;
+            /* Transição suave na cor de fundo */
+        }
+
+        /* Efeito ao passar o mouse sobre o botão */
+        .search-button:hover {
+            background: rgb(255, 123, 0);
+            /* Muda para laranja ao passar o mouse */
+        }
+
+        /* Efeito de foco no botão */
+        .search-button:focus {
+            box-shadow: 0 0 10px rgba(255, 123, 0, 0.5);
+            /* Brilho laranja ao focar */
+        }
+
+        /* Efeito ao passar o mouse sobre o formulário */
+        .search-form:hover {
+            transform: scale(1.02);
+            /* Aumenta levemente o tamanho do formulário ao passar o mouse */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            /* Sombra mais forte ao passar o mouse */
+        }
+
+        .main-content {
+            /* background: blue; */
+            padding-top: 0;
+            /* Corrigido de "padding top" para "padding-top" */
+        }
+
+        .main-content-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: var(--spacing-gutter-large);
+
+            max-width: 1200px;
+            /* Define um tamanho máximo para o grid */
+            margin: 0 auto;
+            /* Centraliza o grid horizontalmente */
+            padding: 0 20px;
+            /* Adiciona espaçamento lateral para evitar que o conteúdo fique encostado nas bordas */
+        }
+
+        .recipe {
+
+            background: var(--color-white);
+            /* aqui tbm podemos mecher na posição da sombra */
+            box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 0.6;
+            transform: scale(1);
+            transition: all 300ms ease-in-out;
+
+
+        }
+
+        .recipe img {
+            max-width: 100%;
+
+
+        }
+
+        .recipe-list-item {
+            max-width: 64rem;
+
+        }
+
+        .recipe-list-item:hover {
+            transform: scale(1.03);
+            box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .recipe-title-container {
+
+            padding: var(--spacing-gutter-medium);
+            padding-bottom: 2rem;
+
+
+        }
+
+        .recipe-author {
+            padding: 0 var(--spacing-gutter-medium);
+        }
+
+        .recipe-content {
+            padding: var(--spacing-gutter-medium);
+            padding-bottom: 2rem;
+        }
+
+        .recipe-author-item {
+            color: var(--color-gray-4);
+            margin-right: 1rem;
+            text-decoration: none;
+
+
+        }
+
+        .recipe-author a {
+
+            color: var(--color-primary);
+            transform: all 300ms ease-in-out;
+            text-decoration: none;
+        }
+
+        .recipe-author a:hover {
+            color: var(--color-primary-dark);
+
+
+        }
+
+        .recipe-meta-container {
+            display: flex;
+            flex-flow: row wrap;
+            /* Permite que o conteúdo se ajuste conforme o tamanho da tela */
+            gap: var(--spacing-gutter-medium);
+            /* Adiciona espaço consistente entre os itens */
+            padding: var(--spacing-gutter-medium);
+            /* Espaçamento interno */
+            background: var(--color-gray-2);
+            /* Fundo básico */
+            margin: 0 -3rem -3rem;
+            /* Condensa as margens laterais e inferiores */
+            justify-content: space-evenly;
+            /* Distribui o espaço entre os itens */
+            align-items: center;
+            /* Alinha os itens verticalmente no centro */
+            border-radius: 8px;
+            /* Adiciona bordas arredondadas para um visual mais suave */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            /* Sombra suave para destaque */
         }
     </style>
 </head>
