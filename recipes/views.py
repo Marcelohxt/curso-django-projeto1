@@ -5,7 +5,9 @@ from django.http  import HttpResponse
 # Create your views here.
 
 def home(request):
-    return render(request, 'global/home.html')
+    return render(request, 'recipes/pages/home.html',context={
+        "name": ""
+        })
 
 
 def contato(request):
